@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Hello World · 4melogo&#39;s Studio
+        4melogo&#39;s Studio
         
     </title>
     <link rel="icon" href= /assets/favicon.ico>
@@ -72,7 +72,7 @@
                 <a href="/" >4melogo&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Hello World</a>
+                <a href="#" class="post-name"></a>
             </div>
     </div>
     
@@ -93,7 +93,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Hello World
+            [Untitled Post]
             <!-- 404 -->
             
         </h1>
@@ -112,7 +112,7 @@
             <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = "/static/api/js/share.js"];</script>
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/02/02</span>
+                <span class="post-intro-time">2018/02/04</span>
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe604;</span>
                     <span id="busuanzi_value_page_pv"></span>
@@ -195,27 +195,24 @@
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="关于git以及git与hexo结合搭建博客"><a href="#关于git以及git与hexo结合搭建博客" class="headerlink" title="关于git以及git与hexo结合搭建博客"></a>关于git以及git与hexo结合搭建博客</h1><hr>
+<p>首先确定已经安装git</p>
+<p>一、创建版本库：<br>    ①  midir 文件名1<br>       cd 文件名1<br>       pwd  //显示文件所在目录<br>    ② git init  //将该目录变成git管理的仓库<br>    ③ 将要 写的文件2放到之前创的文件名的目录下（打开notepad然后另存为）<br>    ④ git add 文件名2  //把文件添加到仓库   （add可以多次提交不同文件，中间没有符号）<br>    ⑤ git commit -m”wrote a 文件名2 file”  //把文件提交到仓库<br>二、<br>    ① git status  //用来查看结果（是否被修改）<br>    ② git diff    //用来查看做了哪些修改<br>    ③ 再提交  add  、 commit<br>    ④ git log    //查看“从终至始”都做了哪些修改<br>    ⑤ git reset –hard HEAD^(上一个版本)  HEAD^^(上上个版本) HEAD~100（上一百个版本）<br>       git reset –hard commit_id （指定到的版本）<br>       cat 文件名2  //查看当前<br>    ⑥ 当改乱了时，想丢弃工作区的修改，  git checkout –file<br>三、将本地库传到github上：<br>    ① git remote add 名字 git@github.com:4melogo/github库名.git<br>    ② git push -u 名字 master</p>
+<p>四、从远程库克隆：<br>    ① 在github上新建一个库<br>    ② git clone git@github.com:4melogo/库名.git<br>    ③ 从远程库拉取 git pull 库名 master:master</p>
+<p>五、分支：<br>    ① 查看分支   git branch<br>    ② 创建分支   git branch 分支名<br>    ③ 切换分支   git checkout 分支名<br>    ④ 创建并切换分支 git checkout -b 分支名<br>    ⑤ 合并某分支到当前分支 git merge 分支名<br>    ⑥ 删除分支 git branch -d分支名   删除远程分支  git push 库名 –delete 分支名<br>    ⑦ 在分支里插入 vi+文件名2<br>    ⑧ 按:wq退出插入<br>      （1）冲突：<br>        ① 先提交新分支，再切换到master提交。再合并。<br>        ② 创建分支时，可以使用–no-ff方式的git merge<br>            先创建分支，然后git add文件名2 ，然后git commit -m” “,，然后切回master分支，合并时 git merge –no-ff-m” “分支名<br>      （2）bug分支：（当在其他分支dev上的工作没有完成，但是要修复bug时，用 git stash储藏起来）<br>        假设在master上出现bug，就在master上创建分支修复，修复完成后，再切换到master分支，并合并，再删除修复分支<br>        （如果还要继续在没完成的工作的分支dev上工作，就切换到dev分支，用git stash list查看，用git stash pop恢复并删除stash内容）<br>六、多人协作：<br>    ① 查看远程库信息  git remote -v<br>    ② 从本地推送分支，使用git push 远程库名 分支名，如果推送失败，先用git pull抓取远程的新提交；<br>七、标签管理：<br>    ① 创建标签：先切换到需要打标签的分支上，然后git tag 标签名（可以用git tag查看所有标签）<br>        如果要给以前的commit id打标签。可以先git log –pretty=oneline –abbrev-commit，找到要打的id，然后git tag 标签名 commit id<br>    ② 查看标签信息 git show 标签名<br>    ③ 创建带有说明的标签 git tag -a 标签名 -m” “id，用git show 标签名查看说明文字<br>    ④ 私钥标签 git tag -s 标签名 -m” “id<br>    ⑤删除标签 git tag -d 标签名<br>    ⑥ 推送标签到远程 git push origin 标签名   如果一次性推送全部标签：git push origin –tags<br>    ⑦删除远程标签： 先删除本地标签，再git push origin：refs/tags/标签名</p>
+<p>八、自定义git<br>    ① git config –global color.ui true 显示颜色</p>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="next">
-                <a href= "/2018/02/04/关于git以及git，hexo搭建博客/" title=  >
-                    <span>Next Post</span>
-                    <span>[Untitled Post]</span>
+        
+            <li class="previous">
+                <a href= "/2018/02/02/hello-world/" title= Hello World >
+                    <span>Previous Post</span>
+                    <span>Hello World</span>
                 </a>
             </li>
-        
         
     </ul>
     <!-- 评论插件 -->
@@ -283,7 +280,7 @@
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#关于git以及git与hexo结合搭建博客"><span class="toc-number">1.</span> <span class="toc-text">关于git以及git与hexo结合搭建博客</span></a></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
